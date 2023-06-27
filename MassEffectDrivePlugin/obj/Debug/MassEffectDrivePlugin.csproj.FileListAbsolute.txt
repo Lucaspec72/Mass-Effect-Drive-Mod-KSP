@@ -1,0 +1,219 @@
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\MassEffectDrivePlugin.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\MassEffectDrivePlugin.pdb
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.CoreModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.PhysicsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UI.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.AnimationModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.AudioModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.ParticleSystemModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\KSPTrackIR.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.IMGUIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.TextRenderingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\KSPAssets.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.AssetBundleModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\Mono.Cecil.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.VehiclesModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\Ionic.Zip.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.InputLegacyModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.ImageConversionModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\Unity.Analytics.StandardEvents.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\Unity.Analytics.DataPrivacy.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.VRModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.DSPGraphModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.AndroidJNIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.AccessibilityModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityConnectModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.AIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.Physics2DModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.SharedInternalsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClothModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClusterInputModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClusterRendererModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.CrashReportingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.TilemapModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.TerrainModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.VFXModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.VideoModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.GridModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.SubsystemsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.JSONSerializeModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.LocalizationModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UNETModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.DirectorModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.GameCenterModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.SpriteMaskModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.StreamingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.TextCoreModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.SpriteShapeModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.UIElementsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.WindModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.ARModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.XRModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\UnityEngine.InputModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\TDx.TDxInput.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\bin\Debug\KSPAssets.XmlSerializers.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.CopyComplete
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.pdb
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.pdb
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\MassEffectDrivePlugin.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\MassEffectDrivePlugin.pdb
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\0Harmony.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.CoreModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.PhysicsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UI.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AnimationModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AudioModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ParticleSystemModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\KSPTrackIR.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.IMGUIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TextRenderingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\KSPAssets.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AssetBundleModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Mono.Cecil.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VehiclesModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Ionic.Zip.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.InputLegacyModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ImageConversionModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Unity.Analytics.StandardEvents.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Unity.Analytics.DataPrivacy.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VRModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.DSPGraphModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AndroidJNIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AccessibilityModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityConnectModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AIModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.Physics2DModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SharedInternalsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClothModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClusterInputModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClusterRendererModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.CrashReportingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TilemapModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TerrainModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VFXModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VideoModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.GridModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SubsystemsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.JSONSerializeModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.LocalizationModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UNETModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.DirectorModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.GameCenterModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SpriteMaskModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.StreamingModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TextCoreModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SpriteShapeModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UIElementsModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.WindModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ARModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.XRModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.InputModule.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\TDx.TDxInput.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\KSPAssets.XmlSerializers.dll
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.CopyComplete
+C:\Users\Lucas\source\repos\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\MassEffectDrivePlugin.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\MassEffectDrivePlugin.pdb
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.CoreModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.PhysicsModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UI.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AnimationModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AudioModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ParticleSystemModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\KSPTrackIR.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.IMGUIModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TextRenderingModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\KSPAssets.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AssetBundleModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UIModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Mono.Cecil.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VehiclesModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Ionic.Zip.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.InputLegacyModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ImageConversionModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Unity.Analytics.StandardEvents.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Unity.Analytics.DataPrivacy.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VRModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.DSPGraphModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AndroidJNIModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AccessibilityModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityConnectModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.AIModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.Physics2DModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SharedInternalsModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClothModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClusterInputModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ClusterRendererModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.CrashReportingModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TilemapModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TerrainModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VFXModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.VideoModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.GridModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SubsystemsModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.JSONSerializeModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.LocalizationModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UNETModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.DirectorModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.GameCenterModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SpriteMaskModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.StreamingModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.TextCoreModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.SpriteShapeModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.UIElementsModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.WindModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.ARModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.XRModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\UnityEngine.InputModule.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\TDx.TDxInput.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\bin\Debug\KSPAssets.XmlSerializers.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.AssemblyReference.cache
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.csproj.CopyComplete
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.dll
+C:\Users\Lucas\Desktop\MassEffectDrivePlugin 4.7.2\MassEffectDrivePlugin\obj\Debug\MassEffectDrivePlugin.pdb
