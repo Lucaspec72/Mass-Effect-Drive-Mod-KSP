@@ -16,7 +16,7 @@ namespace MassEffectDrivePlugin
         [KSPField(guiName = "Mass Effect Drive Status", guiActive = true, isPersistant = false)]
         public string MEdriveState = "Inactive";
 
-        [KSPField(guiActive = true, guiActiveEditor = false, guiName = "Mass Reduction Percentage", isPersistant = false), UI_FloatRange(minValue = -98f, maxValue = 98f, stepIncrement = 0.01f)]
+        [KSPField(guiActive = true, guiActiveEditor = false, guiName = "Mass Reduction Percentage", isPersistant = false), UI_FloatRange(minValue = 0f, maxValue = 98f, stepIncrement = 0.01f)]
         public float GravWarpHandle = 0f;
         //stores the previous value of GravWarpHandle to detect change.
         public float GravWarpHandlePrevious = 0f;
@@ -30,6 +30,9 @@ namespace MassEffectDrivePlugin
 
         [KSPField(guiName = "Current Energy Requirement", guiActive = true, isPersistant = false)]
         public double DriveConsumption = 0;
+
+        [KSPField(guiName = "Static Charge Discharge Efficiency", guiActive = true, isPersistant = false)]
+        public double SCDischargeMultPrevious = 0;
 
         //ADD EFFICIENCY MULTIPLIER (percentage of optimal eezo)
 

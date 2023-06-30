@@ -27,6 +27,7 @@ namespace MassEffectDrivePlugin
         public List<ModuleMEdrive> DriveList = new List<ModuleMEdrive>();
         public Dictionary<Part, float> PartMass = new Dictionary<Part, float>();
         int EChash;
+        int SChash;
         //Mass warping percentage
         public float GravWarpPercentage;
         //real mass of vessel
@@ -34,6 +35,7 @@ namespace MassEffectDrivePlugin
         public float VesselMassPrevious;
         public float WarpedMassPrevious;
         public double DriveConsumptionPrevious;
+        public double SCDischargeMultPrevious;
         //Boolean flag for drive state
         public bool MEdriveActivated = false;
  
@@ -127,6 +129,7 @@ namespace MassEffectDrivePlugin
         public void UpdateDriveList(Vessel GameEventVessel=null)
         {
             EChash = PartResourceLibrary.Instance.GetDefinition("ElectricCharge").id;
+            SChash = PartResourceLibrary.Instance.GetDefinition("StaticCharge").id;
             DisableDrive();
             DriveList = this.vessel.FindPartModulesImplementing<ModuleMEdrive>();
             foreach (ModuleMEdrive Drive in DriveList)
@@ -144,7 +147,35 @@ namespace MassEffectDrivePlugin
         }
         public void FixedUpdate()
         {
-            VesselMass = PartMass.Sum(x => x.Value);
+            // add check to limit minimum altitude to 1 (else would divide by zero or consume flux below zero
+            if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
+            {
+                double multiplier = this.vessel.mainBody.scienceValues.spaceAltitudeThreshold / this.vessel.altitude;
+                if (this.vessel.altitude < 1 || multiplier > 10) //10 is max multiplier.
+                {
+                    multiplier = 10;
+                }
+                if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
+                {
+                    double StaticChargeDischarge = (0.00248015873015873015873015873016 * DriveList.Count() * multiplier);
+                    double StaticChargeDischageDelta = StaticChargeDischarge * Time.fixedDeltaTime;
+                    this.vessel.RequestResource(this.vessel.Parts[0], SChash, StaticChargeDischageDelta, false);
+                } else
+                {
+                    multiplier = 0;
+                }
+                if (multiplier != SCDischargeMultPrevious)
+                {
+                    SCDischargeMultPrevious = multiplier;
+                    foreach (ModuleMEdrive Drive in DriveList)
+                    {
+                        Drive.SCDischargeMultPrevious = SCDischargeMultPrevious;
+                    }
+                }
+            }
+            
+        //Check for VesselMass Update
+        VesselMass = PartMass.Sum(x => x.Value);
             if (VesselMass != VesselMassPrevious)
             {
                 VesselMassPrevious = VesselMass;
@@ -153,6 +184,7 @@ namespace MassEffectDrivePlugin
                     Drive.VesselMass = VesselMass;
                 }
             }
+            //Check for DriveEnergy Update 
             double DriveEnergy = CalcEnergy();
             if (DriveEnergy != DriveConsumptionPrevious)
             {
@@ -164,12 +196,12 @@ namespace MassEffectDrivePlugin
 
 
             }
-            
             if (MEdriveActivated)
             {
                 double DriveEnergyDelta = DriveEnergy * Time.fixedDeltaTime;
-                double RequestReturn = this.vessel.RequestResource(this.vessel.Parts[0], EChash, DriveEnergyDelta, false);
-                if (RequestReturn != 0)
+                double ECReturn = this.vessel.RequestResource(this.vessel.Parts[0], EChash, DriveEnergyDelta, false);
+                double SCReturn = this.vessel.RequestResource(this.vessel.Parts[0], SChash, -DriveEnergyDelta, false);
+                if (Math.Abs(DriveEnergyDelta - ECReturn) < 0.01 && Math.Abs(DriveEnergyDelta + SCReturn) < 0.01)
                 {
                     //what to do while the engine is running, example, add static buildup
                     float WarpedMass = (GravWarpPercentage / 100) * VesselMass;
