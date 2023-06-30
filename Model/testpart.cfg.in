@@ -1,0 +1,49 @@
+values {
+	mass = ${math.floor(7.8 * modelSkinVolume * 1000 + 0.5)/1000}
+	capacity = ${math.floor((modelExtVolume-modelSkinVolume) * 1000)/1000}
+	resourceCapacity = ${math.floor(capacity*200)}
+	LiquidFuel = ${9 * resourceCapacity / 20}
+	Oxidizer = ${11 * resourceCapacity / 20}
+}
+PART
+{
+	name = Prototype Mass Effect Drive
+	module = Part
+	author = Lucaspec72
+    mesh = model.mu
+	rescaleFactor = 1.0
+	scale = 1.0
+
+
+	TechRequired = advConstruction
+	entryCost = 10000000
+	cost = 1000000
+	category = utility
+	subcategory = 0
+	title = Prototype Mass Effect Drive
+	manufacturer = Pecquenard Dynamics
+	description = Placeholder part to test Mass Effect Drive module Implementation
+    attachRules = 1,1,1,1,0
+
+	mass = 5
+	dragModelType = default
+	maximum_drag = 0.2
+	minimum_drag = 0.15
+	angularDrag = 2
+	crashTolerance = 8
+	breakingForce = 200
+	breakingTorque = 200
+	maxTemp = 1700
+
+	MODULE  
+    {
+            name = ModuleMEdrive       
+    }
+    RESOURCE
+    {
+        	name = ElementZero
+    	amount = 2000000
+    	maxAmount = 2000000
+    }
+}
+
