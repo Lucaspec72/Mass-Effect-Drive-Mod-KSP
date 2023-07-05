@@ -38,6 +38,7 @@ Alpha 2 :
 -Fixed issues with Flux Discharging not working
 -Changed Time.fixedDeltaTime to TimeWarp.fixedDeltaTime to fix timewarp not properly setting ressources.
 -Made every fixedUpdate code of the vesselModule only run when Highlogic is set to LoadedSceneIsFlight to avoid error spam in console.
+-Boosted the max multiplier for Flux venting to 100
 
 Alpha 1.1 hotfix :
 
