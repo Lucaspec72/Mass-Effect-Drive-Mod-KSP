@@ -27,7 +27,7 @@ namespace MassEffectDrivePlugin
         public List<ModuleMEdrive> DriveList = new List<ModuleMEdrive>();
         public Dictionary<Part, float> PartMass = new Dictionary<Part, float>();
         int EChash;
-        int SChash;
+        int Fluxhash;
         //Mass warping percentage
         public float GravWarpPercentage;
         //real mass of vessel
@@ -35,7 +35,7 @@ namespace MassEffectDrivePlugin
         public float VesselMassPrevious;
         public float WarpedMassPrevious;
         public double DriveConsumptionPrevious;
-        public double SCDischargeMultPrevious;
+        public double FluxDischargeMultPrevious;
         //Boolean flag for drive state
         public bool MEdriveActivated = false;
  
@@ -129,7 +129,7 @@ namespace MassEffectDrivePlugin
         public void UpdateDriveList(Vessel GameEventVessel=null)
         {
             EChash = PartResourceLibrary.Instance.GetDefinition("ElectricCharge").id;
-            SChash = PartResourceLibrary.Instance.GetDefinition("StaticCharge").id;
+            Fluxhash = PartResourceLibrary.Instance.GetDefinition("Flux").id;
             DisableDrive();
             DriveList = this.vessel.FindPartModulesImplementing<ModuleMEdrive>();
             foreach (ModuleMEdrive Drive in DriveList)
@@ -148,74 +148,80 @@ namespace MassEffectDrivePlugin
         public void FixedUpdate()
         {
             // add check to limit minimum altitude to 1 (else would divide by zero or consume flux below zero
-            if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
+            if (HighLogic.LoadedSceneIsFlight)
             {
-                double multiplier = this.vessel.mainBody.scienceValues.spaceAltitudeThreshold / this.vessel.altitude;
-                if (this.vessel.altitude < 1 || multiplier > 10) //10 is max multiplier.
-                {
-                    multiplier = 10;
-                }
                 if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                 {
-                    double StaticChargeDischarge = (0.00248015873015873015873015873016 * DriveList.Count() * multiplier);
-                    double StaticChargeDischageDelta = StaticChargeDischarge * Time.fixedDeltaTime;
-                    this.vessel.RequestResource(this.vessel.Parts[0], SChash, StaticChargeDischageDelta, false);
-                } else
-                {
-                    multiplier = 0;
-                }
-                if (multiplier != SCDischargeMultPrevious)
-                {
-                    SCDischargeMultPrevious = multiplier;
-                    foreach (ModuleMEdrive Drive in DriveList)
+                    double multiplier = this.vessel.mainBody.scienceValues.spaceAltitudeThreshold / this.vessel.altitude;
+                    if (this.vessel.altitude < 1 || multiplier > 100) //10 is max multiplier.
                     {
-                        Drive.SCDischargeMultPrevious = SCDischargeMultPrevious;
+                        multiplier = 100;
                     }
-                }
-            }
-            
-        //Check for VesselMass Update
-        VesselMass = PartMass.Sum(x => x.Value);
-            if (VesselMass != VesselMassPrevious)
-            {
-                VesselMassPrevious = VesselMass;
-                foreach (ModuleMEdrive Drive in DriveList)
-                {
-                    Drive.VesselMass = VesselMass;
-                }
-            }
-            //Check for DriveEnergy Update 
-            double DriveEnergy = CalcEnergy();
-            if (DriveEnergy != DriveConsumptionPrevious)
-            {
-                foreach (ModuleMEdrive Drive in DriveList)
-                {
-                    Drive.DriveConsumption = DriveEnergy;
-                }
-                DriveConsumptionPrevious = DriveEnergy;
-
-
-            }
-            if (MEdriveActivated)
-            {
-                double DriveEnergyDelta = DriveEnergy * Time.fixedDeltaTime;
-                double ECReturn = this.vessel.RequestResource(this.vessel.Parts[0], EChash, DriveEnergyDelta, false);
-                double SCReturn = this.vessel.RequestResource(this.vessel.Parts[0], SChash, -DriveEnergyDelta, false);
-                if (Math.Abs(DriveEnergyDelta - ECReturn) < 0.01 && Math.Abs(DriveEnergyDelta + SCReturn) < 0.01)
-                {
-                    //what to do while the engine is running, example, add static buildup
-                    float WarpedMass = (GravWarpPercentage / 100) * VesselMass;
-                    if (WarpedMass != WarpedMassPrevious)
+                    if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                     {
-                        WarpedMassPrevious = WarpedMass;
+                        //normally there would be a 0.06 modifier or so to make it less efficient but it doesn't seem to work currently so trying stuff.
+                        double StaticChargeDischarge = (0.008 * DriveList.Count() * multiplier);
+                        double StaticChargeDischageDelta = StaticChargeDischarge * TimeWarp.fixedDeltaTime;
+                        this.vessel.RequestResource(this.vessel.Parts[0], Fluxhash, StaticChargeDischageDelta, false);
+                    }
+                    else
+                    {
+                        multiplier = 0;
+                    }
+                    if (multiplier != FluxDischargeMultPrevious)
+                    {
+                        FluxDischargeMultPrevious = multiplier;
                         foreach (ModuleMEdrive Drive in DriveList)
                         {
-                            Drive.WarpedMass = WarpedMass;
+                            Drive.SCDischargeMultPrevious = FluxDischargeMultPrevious;
                         }
                     }
-                } else
+                }
+
+                //Check for VesselMass Update
+                VesselMass = PartMass.Sum(x => x.Value);
+                if (VesselMass != VesselMassPrevious)
                 {
-                    DisableDrive();
+                    VesselMassPrevious = VesselMass;
+                    foreach (ModuleMEdrive Drive in DriveList)
+                    {
+                        Drive.VesselMass = VesselMass;
+                    }
+                }
+                //Check for DriveEnergy Update 
+                double DriveEnergy = CalcEnergy();
+                if (DriveEnergy != DriveConsumptionPrevious)
+                {
+                    foreach (ModuleMEdrive Drive in DriveList)
+                    {
+                        Drive.DriveConsumption = DriveEnergy;
+                    }
+                    DriveConsumptionPrevious = DriveEnergy;
+
+
+                }
+                if (MEdriveActivated)
+                {
+                    double DriveEnergyDelta = DriveEnergy * TimeWarp.fixedDeltaTime;
+                    double ECReturn = this.vessel.RequestResource(this.vessel.Parts[0], EChash, DriveEnergyDelta, false);
+                    double SCReturn = this.vessel.RequestResource(this.vessel.Parts[0], Fluxhash, -DriveEnergyDelta, false);
+                    if (Math.Abs(DriveEnergyDelta - ECReturn) < 0.01 && Math.Abs(DriveEnergyDelta + SCReturn) < 0.01)
+                    {
+                        //what to do while the engine is running, example, add static buildup
+                        float WarpedMass = (GravWarpPercentage / 100) * VesselMass;
+                        if (WarpedMass != WarpedMassPrevious)
+                        {
+                            WarpedMassPrevious = WarpedMass;
+                            foreach (ModuleMEdrive Drive in DriveList)
+                            {
+                                Drive.WarpedMass = WarpedMass;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        DisableDrive();
+                    }
                 }
             }
         }
