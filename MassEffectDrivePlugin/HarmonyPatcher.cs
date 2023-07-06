@@ -17,7 +17,7 @@ namespace MassEffectDrivePlugin
         public class UpdateMass_Patch
         {
 			static void Postfix(Part __instance)
-			{
+            {
 				float customMassModifier = 0;
 
 				if (HighLogic.LoadedSceneIsFlight) //might edit this check at some point to apply this when the vessel exists rather than when in flight mode. (DUCT TAPE FIX)
@@ -32,6 +32,7 @@ namespace MassEffectDrivePlugin
 
 				__instance.mass += customMassModifier;
 			}
+
 		}
         [HarmonyPatch(typeof(Part), nameof(Part.ModulesOnFixedUpdate))]
         public class ModulesOnFixedUpdate_Patch
