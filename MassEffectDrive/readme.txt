@@ -1,6 +1,6 @@
 Mass Effect Drive (MEdrive) Mod for KSP
 Made by Lucaspec72
-Alpha version 3
+Alpha version 3.1
 Released 06/07/2023
 
 
@@ -31,6 +31,10 @@ The Mass Effect Drives automatically Discharge the vessel's Flux Capacitors when
 To prevent accidently tearing the fabric of spacetime, the drive will automatically shut itself off when the vessel is altered.
 
 Changelog :
+
+Alpha 3.1 hotfix :
+
+-Optimised the Postfix Patch.
 
 Alpha 3 :
 
