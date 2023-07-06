@@ -1,7 +1,7 @@
 Mass Effect Drive (MEdrive) Mod for KSP
 Made by Lucaspec72
-Alpha version 2
-Released 05/07/2023
+Alpha version 2.1
+Released 06/07/2023
 
 
 --------------------
@@ -32,18 +32,22 @@ To prevent accidently tearing the fabric of spacetime, the drive will automatica
 
 Changelog :
 
+Alpha 2.1 hotfix :
+
+-Added Restock Compability
+
 Alpha 2 :
 
 -Renamed Static Charge to Flux
 -Fixed issues with Flux Discharging not working
--Changed Time.fixedDeltaTime to TimeWarp.fixedDeltaTime to fix timewarp not properly setting ressources.
--Made every fixedUpdate code of the vesselModule only run when Highlogic is set to LoadedSceneIsFlight to avoid error spam in console.
+-Changed Time.fixedDeltaTime to TimeWarp.fixedDeltaTime to fix timewarp not properly setting ressources
+-Made every fixedUpdate code of the vesselModule only run when Highlogic is set to LoadedSceneIsFlight to avoid error spam in console
 -Boosted the max multiplier for Flux venting to 100
 
 Alpha 1.1 hotfix :
 
 -Fixed Error with drive cost that caused it to be negative when empty.
--Gets placeholder models directly from the squad folder instead of having copies in the mod folder to be EULA compliant.
+-Gets placeholder models directly from the squad folder instead of having copies in the mod folder to be EULA compliant
 
 Alpha 1 :
 
