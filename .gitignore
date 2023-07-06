@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MassEffectDrivePlugin/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/MassEffectDrivePlugin/obj/Debug/MassEffectDrivePlugin.csproj.AssemblyReference.cache
+/MassEffectDrivePlugin/obj/Debug/MassEffectDrivePlugin.csproj.FileListAbsolute.txt
+/MassEffectDrivePlugin/obj/Debug/MassEffectDrivePlugin.pdb
+/MassEffectDrivePlugin/obj/Debug/MassEffectDrivePlugin.dll
+*.pdb
+*.dll
+/.vs/MassEffectDrivePlugin
+/.vs/Mass-Effect-Drive-Mod-KSP-Fork/v17
