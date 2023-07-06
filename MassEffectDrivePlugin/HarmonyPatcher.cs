@@ -63,23 +63,53 @@ namespace MassEffectDrivePlugin
         [HarmonyPatch(typeof(Part), nameof(Part.ModulesOnFixedUpdate))]
         public class ModulesOnFixedUpdate_Patch
         {
-			static void Postfix(Part __instance)
-			{
-				float customMassModifier = 0;
+            static bool Prefix(Part __instance)
+            {
+                int count = __instance.modules.Count;
+                float num = 0.0f;
+                if (__instance.needPrefabMass)
+                {
+                    __instance.prefabMass = __instance.mass;
+                    if (__instance.partInfo != null && (UnityEngine.Object)__instance.partInfo.partPrefab != (UnityEngine.Object)null)
+                        __instance.prefabMass = __instance.partInfo.partPrefab.mass;
+                    __instance.needPrefabMass = false;
+                }
+                for (int index = 0; index < count; ++index)
+                {
+                    try
+                    {
+                        PartModule module = __instance.modules[index];
+                        if (module.isEnabled)
+                            __instance.modules[index].OnFixedUpdate();
+                        if (module is IPartMassModifier partMassModifier)
+                            num += partMassModifier.GetModuleMass(__instance.prefabMass, ModifierStagingSituation.CURRENT);
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.LogError((object)("Module " + __instance.modules[index].moduleName + " threw during OnFixedUpdate: " + (object)ex));
+                    }
+                }
+                //CODE INJECTION
+                float customMassModifier = 0;
 
-				if (HighLogic.LoadedSceneIsFlight) //might edit this check at some point to apply this when the vessel exists rather than when in flight mode. (DUCT TAPE FIX)
-				{
-					VesselModuleMEdrive MEdrive = __instance.vessel.FindVesselModuleImplementing<VesselModuleMEdrive>();
-					if (MEdrive)
-					{
-						customMassModifier = -((MEdrive.GetMassPercentage() / 100) * (__instance.mass + __instance.GetResourceMass()));
-						MEdrive.PartMass[__instance] = __instance.mass + __instance.GetResourceMass();
-					}
-				}
-
-				__instance.mass += customMassModifier;
-			}
-
-		}
+                if (HighLogic.LoadedSceneIsFlight) //might edit this check at some point to apply this when the vessel exists rather than when in flight mode. (DUCT TAPE FIX)
+                {
+                    VesselModuleMEdrive MEdrive = __instance.vessel.FindVesselModuleImplementing<VesselModuleMEdrive>();
+                    if (MEdrive)
+                    {
+                        customMassModifier = -((MEdrive.GetMassPercentage() / 100) * ((__instance.prefabMass + num) + __instance.GetResourceMass()));
+                        MEdrive.PartMass[__instance] = __instance.prefabMass + num + __instance.GetResourceMass();
+                    }
+                }
+                __instance.mass = __instance.prefabMass + num + customMassModifier;
+                if (customMassModifier != 0)
+                    return false;
+                //CODE INJECTION
+                if ((double)__instance.mass >= (double)__instance.partInfo.MinimumMass)
+                    return false;
+                __instance.mass = __instance.partInfo.MinimumMass;
+                return false;
+            }
+        }
     }
 }
