@@ -121,6 +121,7 @@ namespace MassEffectDrivePlugin
         public override void OnUnloadVessel()
         {
             DisableDrive();
+            GameEvents.onVesselStandardModification.Remove(UpdateDriveList);
             DriveList.Clear();
             PartMass.Clear();
         }
@@ -128,6 +129,8 @@ namespace MassEffectDrivePlugin
         //disables the drive, updates the driveList and send call to PartModules to update their VesselDrive.
         public void UpdateDriveList(Vessel GameEventVessel=null)
         {
+            GameEvents.onVesselStandardModification.Remove(UpdateDriveList);
+            GameEvents.onVesselStandardModification.Add(UpdateDriveList);
             EChash = PartResourceLibrary.Instance.GetDefinition("ElectricCharge").id;
             Fluxhash = PartResourceLibrary.Instance.GetDefinition("Flux").id;
             DisableDrive();
@@ -142,13 +145,13 @@ namespace MassEffectDrivePlugin
         {
             base.OnStart();
             {
-                GameEvents.onVesselStandardModification.Add(UpdateDriveList);
+                UpdateDriveList();
             }
         }
         public void FixedUpdate()
         {
             // add check to limit minimum altitude to 1 (else would divide by zero or consume flux below zero
-            if (HighLogic.LoadedSceneIsFlight)
+            if (this.vessel.loaded)
             {
                 if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                 {
@@ -160,9 +163,17 @@ namespace MassEffectDrivePlugin
                     if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                     {
                         //normally there would be a 0.06 modifier or so to make it less efficient but it doesn't seem to work currently so trying stuff.
-                        double StaticChargeDischarge = (0.008 * DriveList.Count() * multiplier);
-                        double StaticChargeDischageDelta = StaticChargeDischarge * TimeWarp.fixedDeltaTime;
-                        this.vessel.RequestResource(this.vessel.Parts[0], Fluxhash, StaticChargeDischageDelta, false);
+                        try
+                        {
+                            double StaticChargeDischarge = (0.008 * DriveList.Count() * multiplier);
+                            double StaticChargeDischageDelta = StaticChargeDischarge * TimeWarp.fixedDeltaTime;
+                            Debug.Log(DriveList.ToString());
+                            Debug.Log(VesselMass.ToString());
+                            this.vessel.RequestResource(this.vessel.Parts[0], Fluxhash, StaticChargeDischageDelta, false);
+                        } catch (ArgumentOutOfRangeException e)
+                        {
+                            Debug.Log(e.ToString());
+                        }
                     }
                     else
                     {
