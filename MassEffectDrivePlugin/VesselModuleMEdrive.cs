@@ -22,12 +22,15 @@ namespace MassEffectDrivePlugin
 
 
 
-
-        //may be ugly, but only current way i found to get the real mass. (using dict.Sum(x => x.Value);)
+        //list of all of a vessel's drives
         public List<ModuleMEdrive> DriveList = new List<ModuleMEdrive>();
+        //used to determine real mass of vessel
         public Dictionary<Part, float> PartMass = new Dictionary<Part, float>();
+        //hashes for ressource requests
         int EChash;
         int Fluxhash;
+        //hard value equal to DriveList.Count() to get number of drives without needing drivelist, for unloaded calcs.
+        public int DriveCount;
         //Mass warping percentage
         public float GravWarpPercentage;
         //real mass of vessel
@@ -35,7 +38,7 @@ namespace MassEffectDrivePlugin
         public float VesselMassPrevious;
         public float WarpedMassPrevious;
         public double DriveConsumptionPrevious;
-        public double FluxDischargeMultPrevious;
+        public double FluxVentingMultPrevious;
         //Boolean flag for drive state
         public bool MEdriveActivated = false;
  
@@ -150,43 +153,52 @@ namespace MassEffectDrivePlugin
         }
         public void FixedUpdate()
         {
-            // add check to limit minimum altitude to 1 (else would divide by zero or consume flux below zero
-            if (this.vessel.loaded)
+            //If vessel has at least one drive, run Static Charge venting code. idk if it's optimised but hopefully it shouldn't completely ruin performance.
+            double FluxVentingMultiplier = this.vessel.mainBody.scienceValues.spaceAltitudeThreshold / this.vessel.altitude;
+            if (DriveCount != 0)
             {
                 if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                 {
-                    double multiplier = this.vessel.mainBody.scienceValues.spaceAltitudeThreshold / this.vessel.altitude;
-                    if (this.vessel.altitude < 1 || multiplier > 100) //10 is max multiplier.
+                    if (this.vessel.altitude < 1 || FluxVentingMultiplier > 100) //10 is max FluxVentingMultiplier.
                     {
-                        multiplier = 100;
+                        FluxVentingMultiplier = 10;
                     }
                     if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                     {
-                        //normally there would be a 0.06 modifier or so to make it less efficient but it doesn't seem to work currently so trying stuff.
-                        try
-                        {
-                            double StaticChargeDischarge = (0.008 * DriveList.Count() * multiplier);
-                            double StaticChargeDischageDelta = StaticChargeDischarge * TimeWarp.fixedDeltaTime;
-                            Debug.Log(DriveList.ToString());
-                            Debug.Log(VesselMass.ToString());
-                            this.vessel.RequestResource(this.vessel.Parts[0], Fluxhash, StaticChargeDischageDelta, false);
-                        } catch (ArgumentOutOfRangeException e)
-                        {
-                            Debug.Log(e.ToString());
-                        }
+                        double StaticChargeDischarge = (0.008 * DriveCount * FluxVentingMultiplier);
+                        double StaticChargeDischageDelta = StaticChargeDischarge * TimeWarp.fixedDeltaTime;
+                        this.vessel.RequestResource(this.vessel.Parts[0], Fluxhash, StaticChargeDischageDelta, false);
                     }
                     else
                     {
-                        multiplier = 0;
+                        FluxVentingMultiplier = 0;
                     }
-                    if (multiplier != FluxDischargeMultPrevious)
+                }
+            }
+            
+
+            if (this.vessel.loaded)
+            {
+                //part of flux venting code, only needs to run (and only ABLE to run) when loaded.
+                if (DriveCount != 0)
+                {
+                    if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                     {
-                        FluxDischargeMultPrevious = multiplier;
-                        foreach (ModuleMEdrive Drive in DriveList)
+                        if (FluxVentingMultiplier != FluxVentingMultPrevious)
                         {
-                            Drive.SCDischargeMultPrevious = FluxDischargeMultPrevious;
+                            FluxVentingMultPrevious = FluxVentingMultiplier;
+                            foreach (ModuleMEdrive Drive in DriveList)
+                            {
+                                Drive.SCDischargeMultPrevious = FluxVentingMultPrevious;
+                            }
                         }
                     }
+                }
+                        
+                //Check for DriveCount Update
+                if (DriveList.Count() != DriveCount)
+                {
+                    DriveCount = DriveList.Count();
                 }
 
                 //Check for VesselMass Update
