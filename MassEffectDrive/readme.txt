@@ -1,7 +1,7 @@
 Mass Effect Drive (MEdrive) Mod for KSP
 Made by Lucaspec72
-Alpha version 3.2
-Released 26/07/2023
+Alpha version 3.3
+Released 06/05/2024
 
 --------------------
 
@@ -10,7 +10,7 @@ Hi, thank you for trying out the alpha version for the MEdrive mod.
 This is still very much a work in progress, but should be in a mostly playable state.
 If you notice any bug or have suggestions, contact me on discord (Lucaspec72 331059604072955904).
 
-Note : The mod currently uses modified variants of Stock Parts as placeholders until proper parts are added.
+Note : The mod currently uses modified variants of Stock Parts as placeholders until proper parts are added. (don't wait for them, i can't model or texture to save my life.)
 
 What's the mod, and how does it work :
 
@@ -30,9 +30,15 @@ The Mass Effect Drives automatically Discharge the vessel's Flux Capacitors when
 To prevent accidently tearing the fabric of spacetime, the drive will automatically shut itself off when the vessel is altered.
 
 Known Issues :
--none
+
+-DeltaV displays completely bug out when warping more mass than the vessel's dry mass. (mass reduction to counter mass of ressources technically makes the dry mass negative, bugging out the displays. Physics themselves seem unafected.)
+
 
 Changelog :
+
+Alpha 3.3 hotfix :
+
+-Added a Eezo storage tank. Why i didn't think to add one until now is beyond me.
 
 Alpha 3.2 hotfix :
 
