@@ -1,6 +1,6 @@
 Mass Effect Drive (MEdrive) Mod for KSP
 Made by Lucaspec72
-Alpha version 3.3
+Alpha version 3.5
 Released 06/05/2024
 
 --------------------
@@ -31,10 +31,15 @@ To prevent accidently tearing the fabric of spacetime, the drive will automatica
 
 Known Issues :
 
--DeltaV displays completely bug out when warping more mass than the vessel's dry mass. (mass reduction to counter mass of ressources technically makes the dry mass negative, bugging out the displays. Physics themselves seem unafected.)
-
+-DeltaV displays completely bug out when warping more mass than the vessel's dry mass. (mass reduction to counter mass of ressources technically makes the dry mass negative, bugging out the displays. Physics themselves seem unafected.) Will Likely require Harmony patches.
 
 Changelog :
+
+Alpha 3.5 hotfix :
+
+-Fixed a typo in the Mass Effect Drive Partmodule that mentionned static charge to Flux.
+-Fixed a crash when starting drive at 0% mass warping and no Eezo in the drives, which caused a division by 0 resulting in a NaN.
+-Fixed Provisional Eezo Tank being free.
 
 Alpha 3.4 hotfix :
 

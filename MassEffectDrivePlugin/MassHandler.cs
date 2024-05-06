@@ -5,7 +5,7 @@ namespace MassEffectDrivePlugin
 {
     public static class MassHandler
     {
-        //most, if not all of this should burn in a dumpster, due to most of those functions iterating through all parts, or not being necessary at all.
+        //NOTE 05/05/2024 : Unused, can be removed. Just keeping around as a memo of how some stuff works.
         public static float CalculateCurrentMass(this Part part)
         {
             if ((part.physicalSignificance == Part.PhysicalSignificance.FULL) && (part.rb != null))

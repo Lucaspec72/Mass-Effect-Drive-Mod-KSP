@@ -64,7 +64,12 @@ namespace MassEffectDrivePlugin
             {
                 eezoMass += Drive.part.GetResourceMass();
             }
-            double energyCost = (((GravWarpPercentage/100) * VesselMass) / (96.5 * eezoMass) + 0.001) * 3;
+            double energyCost = (((GravWarpPercentage / 100) * VesselMass) / (96.5 * eezoMass) + 0.001) * 3;
+            //check if energyCost is NaN, if it is, set it to 0.
+            if (energyCost != energyCost)
+            {
+                energyCost = 0;
+            }
 
             return energyCost;
         }
@@ -159,7 +164,7 @@ namespace MassEffectDrivePlugin
             {
                 if (this.vessel.altitude < this.vessel.mainBody.scienceValues.spaceAltitudeThreshold)
                 {
-                    if (this.vessel.altitude < 1 || FluxVentingMultiplier > 100) //10 is max FluxVentingMultiplier.
+                    if (this.vessel.altitude < 1 || FluxVentingMultiplier > 10) //10 is max FluxVentingMultiplier for now, might make it a option someday.
                     {
                         FluxVentingMultiplier = 10;
                     }
@@ -230,7 +235,7 @@ namespace MassEffectDrivePlugin
                     double SCReturn = this.vessel.RequestResource(this.vessel.Parts[0], Fluxhash, -DriveEnergyDelta, false);
                     if (Math.Abs(DriveEnergyDelta - ECReturn) < 0.01 && Math.Abs(DriveEnergyDelta + SCReturn) < 0.01)
                     {
-                        //what to do while the engine is running, example, add static buildup
+                        //what to do while the engine is running
                         float WarpedMass = (GravWarpPercentage / 100) * VesselMass;
                         if (WarpedMass != WarpedMassPrevious)
                         {

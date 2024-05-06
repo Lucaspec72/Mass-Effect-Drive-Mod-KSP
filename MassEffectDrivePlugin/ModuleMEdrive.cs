@@ -31,10 +31,8 @@ namespace MassEffectDrivePlugin
         [KSPField(guiName = "Current Energy Requirement", guiActive = true, isPersistant = false)]
         public double DriveConsumption = 0;
 
-        [KSPField(guiName = "Static Charge Discharge Efficiency", guiActive = true, isPersistant = false)]
+        [KSPField(guiName = "Flux Discharge Efficiency", guiActive = true, isPersistant = false)]
         public double SCDischargeMultPrevious = 0;
-
-        //ADD EFFICIENCY MULTIPLIER (percentage of optimal eezo)
 
         [KSPAction("ToggleMEdrive", KSPActionGroup.None, guiName = "Toggle Mass Effect Drive")]
         private void ToggleMEdrive(KSPActionParam param)
@@ -97,6 +95,7 @@ namespace MassEffectDrivePlugin
             {
                 SendUpdateWarpPercentage();
             }
+            //NOTE 06/05/2024 : I have no idea what this below is, keeping in case it's important info. (but it's probably not)
             //Putting this here might be a bad idea, idk.
             //actualMass = MassHandler.GetVesselWetMass(this.vessel); //only get part mass to match current baseMass variable.
             //VesselModuleMEdrive test = this.vessel.FindVesselModuleImplementing<VesselModuleMEdrive>();
