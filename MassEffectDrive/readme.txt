@@ -36,6 +36,10 @@ Known Issues :
 
 Changelog :
 
+Alpha 3.4 hotfix :
+
+-Fixed issues with Restock patch that made Eezo tank and Flux Capacitor not load if Restock was loaded.
+
 Alpha 3.3 hotfix :
 
 -Added a Eezo storage tank. Why i didn't think to add one until now is beyond me.
