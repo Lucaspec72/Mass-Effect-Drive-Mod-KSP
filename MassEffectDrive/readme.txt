@@ -33,6 +33,10 @@ Known Issues :
 
 -DeltaV displays completely bug out when warping more mass than the vessel's dry mass. (mass reduction to counter mass of ressources technically makes the dry mass negative, bugging out the displays. Physics themselves seem unafected.) Will Likely require Harmony patches.
 
+Dependencies :
+
+-Harmony
+
 Changelog :
 
 Alpha 3.5 hotfix :
